@@ -35,6 +35,7 @@ public class LoginController {
 			return new Result(400);
 		} else {
 			session.setAttribute("user",user);
+			System.out.println("账户正确");
 			return new Result(200);
 		}
 	}
