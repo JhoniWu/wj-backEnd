@@ -26,6 +26,4 @@ public class MyWebConfigurer implements WebMvcConfigurer {
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
 		registry.addResourceHandler("/api/file/**").addResourceLocations("file:" + "E:/JAVA_BackEnd/White-Jotter/img_test/");
 	}
-
-
 }
