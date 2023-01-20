@@ -18,11 +18,13 @@ public class UserService {
 	public User getByname(String username){
 		return userDAO.findByUsername(username);
 	}
+	public User getByUsername(String username){
+		return userDAO.findByUsername(username);
+	}
 
 	public User get(String username,String password){
 		return userDAO.getByUsernameAndPassword(username,password);
 	}
-
 	public void add(User user){
 		userDAO.save(user);
 	}
